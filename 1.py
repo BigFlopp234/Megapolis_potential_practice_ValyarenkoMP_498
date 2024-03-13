@@ -9,7 +9,7 @@ with open('students.csv') as f, open('student_new.csv' , 'w') as nf:
     for stroka in data[1:]:
         if chel in stroka:
             print(f'Ты получил: {stroka[-1]},за проект - {stroka[-3]} ')
-        if stroka[-1]!='':
+        if stroka[-1] !='':
             a.append(int(stroka[-1]))
     mean = round(sum(a)/len(a), 3)
     print(mean)
